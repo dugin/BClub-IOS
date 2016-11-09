@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+            <string>OpenSans-Bold</string>
+            <string>OpenSans-Bold</string>
+        </mutableArray>
+        <mutableArray key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+            <string>OpenSans-Light</string>
+            <string>OpenSans-Light</string>
+            <string>OpenSans-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UserProfileDetailedView" customModule="B_Club" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="431"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ativada em" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kEc-Xb-Hd7">
+                    <rect key="frame" x="20" y="83" width="100" height="28"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Ativada em" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TZa-S4-ZNx">
+                    <rect key="frame" x="20" y="119" width="560" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="0.93725490570000003" green="0.4784313738" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="D2q-ea-ABm"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expira em" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GvB-EA-dJu">
+                    <rect key="frame" x="20" y="199" width="90" height="28"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Expira em" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GCL-2a-GIV">
+                    <rect key="frame" x="20" y="235" width="560" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="0.93725490570000003" green="0.4784313738" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="FGp-Uh-OJq"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parcelamento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMc-th-2dN">
+                    <rect key="frame" x="20" y="315" width="560" height="28"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" tag="4" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Parcelamento" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M2N-tV-npM">
+                    <rect key="frame" x="20" y="351" width="560" height="60"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="0.93725490570000003" green="0.4784313738" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="o8G-zO-o8A"/>
+                    </constraints>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="next"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assinatura válida" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DQW-Gn-dEf">
+                    <rect key="frame" x="20" y="20" width="302" height="55"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="40"/>
+                    <color key="textColor" red="0.93725490199999995" green="0.47843137250000001" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.13725490868091583" green="0.13725490868091583" blue="0.13725490868091583" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="kEc-Xb-Hd7" firstAttribute="top" secondItem="DQW-Gn-dEf" secondAttribute="bottom" constant="8" id="6bd-ce-EV0"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kEc-Xb-Hd7" secondAttribute="trailing" constant="20" id="8GC-fl-wbq"/>
+                <constraint firstAttribute="trailing" secondItem="TZa-S4-ZNx" secondAttribute="trailing" constant="20" id="9Qg-gZ-cSi"/>
+                <constraint firstItem="GCL-2a-GIV" firstAttribute="top" secondItem="GvB-EA-dJu" secondAttribute="bottom" constant="8" id="EnG-OR-Hj8"/>
+                <constraint firstItem="kEc-Xb-Hd7" firstAttribute="top" secondItem="DQW-Gn-dEf" secondAttribute="bottom" constant="8" id="GCf-cD-Wou"/>
+                <constraint firstItem="TZa-S4-ZNx" firstAttribute="top" secondItem="kEc-Xb-Hd7" secondAttribute="bottom" constant="8" id="LL8-qt-gqL"/>
+                <constraint firstItem="GvB-EA-dJu" firstAttribute="top" secondItem="TZa-S4-ZNx" secondAttribute="bottom" constant="20" id="LPL-hH-bIO"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DQW-Gn-dEf" secondAttribute="trailing" constant="20" id="NeI-U4-BeP"/>
+                <constraint firstItem="M2N-tV-npM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="SO3-zA-99e"/>
+                <constraint firstItem="AMc-th-2dN" firstAttribute="top" secondItem="GCL-2a-GIV" secondAttribute="bottom" constant="20" id="bWj-Da-LWS"/>
+                <constraint firstItem="GCL-2a-GIV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="cL9-t1-rRT"/>
+                <constraint firstAttribute="trailing" secondItem="AMc-th-2dN" secondAttribute="trailing" constant="20" id="emC-3T-fxm"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GvB-EA-dJu" secondAttribute="trailing" constant="20" id="f8L-tM-6dS"/>
+                <constraint firstAttribute="trailing" secondItem="GCL-2a-GIV" secondAttribute="trailing" constant="20" id="fke-Br-GGr"/>
+                <constraint firstItem="DQW-Gn-dEf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="j0A-mC-6Zx"/>
+                <constraint firstItem="AMc-th-2dN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="jnt-ak-GvE"/>
+                <constraint firstItem="TZa-S4-ZNx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="nJN-GY-AVG"/>
+                <constraint firstItem="kEc-Xb-Hd7" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="p3W-oL-s70"/>
+                <constraint firstItem="M2N-tV-npM" firstAttribute="top" secondItem="AMc-th-2dN" secondAttribute="bottom" constant="8" id="rfu-Xh-owj"/>
+                <constraint firstItem="GvB-EA-dJu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="uf6-Ig-ryZ"/>
+                <constraint firstItem="DQW-Gn-dEf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="vhi-DG-cpg"/>
+                <constraint firstAttribute="trailing" secondItem="M2N-tV-npM" secondAttribute="trailing" constant="20" id="zWY-wT-XtO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <edgeInsets key="layoutMargins" top="20" left="20" bottom="20" right="20"/>
+            <connections>
+                <outlet property="activatedTextField" destination="TZa-S4-ZNx" id="1SZ-X1-ebX"/>
+                <outlet property="expirationTextField" destination="GCL-2a-GIV" id="gvy-mc-uca"/>
+                <outlet property="installmentTextField" destination="M2N-tV-npM" id="qgE-bx-rtC"/>
+            </connections>
+            <point key="canvasLocation" x="63" y="229.5"/>
+        </view>
+    </objects>
+</document>

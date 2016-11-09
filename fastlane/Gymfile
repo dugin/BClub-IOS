@@ -1,0 +1,5 @@
+scheme "bclub"
+configuration "release"
+clean true
+output_directory "./ipa"
+output_name "bclub"

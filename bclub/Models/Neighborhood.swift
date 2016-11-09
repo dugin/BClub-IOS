@@ -1,0 +1,14 @@
+//
+//  Neighborhood.swift
+//  bclub
+//
+//  Created by Bruno Gama on 25/05/16.
+//  Copyright © 2016 bclub. All rights reserved.
+//
+
+import Foundation
+
+class Neighborhood:BackendlessEntity {
+    var name:String?
+    var district:City?
+}

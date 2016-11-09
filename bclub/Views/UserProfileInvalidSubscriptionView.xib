@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </mutableArray>
+        <mutableArray key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+            <string>OpenSans-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UserProfileInvalidSubscriptionView" customModule="B_Club" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="251"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Assinatura inválida :(" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hc4-Vd-a7H">
+                    <rect key="frame" x="20" y="20" width="560" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="XBe-9N-bYR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="28"/>
+                    <color key="textColor" red="0.93725490199999995" green="0.47843137250000001" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MP2-3L-UpN">
+                    <rect key="frame" x="20" y="68" width="560" height="97"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="82" id="Be6-rX-osk"/>
+                    </constraints>
+                    <string key="text">A sua assinatura venceu, mas você só precisa escolher uma das nossas opções de planos fazer parte do maior clube de descontos para mulheres do Brasil</string>
+                    <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="20"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ks-lB-Gvg">
+                    <rect key="frame" x="20" y="187" width="560" height="44"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.47843137254901957" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="CNc-jw-7Lg"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="14"/>
+                    <state key="normal" title="ESCOLHA UM PLANO">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectSubscriptionPlanTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="CWK-dO-47x"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.098039217293262482" green="0.098039217293262482" blue="0.098039217293262482" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Hc4-Vd-a7H" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="2Yk-G7-LvT"/>
+                <constraint firstAttribute="bottom" secondItem="8ks-lB-Gvg" secondAttribute="bottom" constant="20" id="8ir-Yy-jG3"/>
+                <constraint firstItem="8ks-lB-Gvg" firstAttribute="trailing" secondItem="MP2-3L-UpN" secondAttribute="trailing" id="NZ2-4d-gsO"/>
+                <constraint firstItem="MP2-3L-UpN" firstAttribute="leading" secondItem="Hc4-Vd-a7H" secondAttribute="leading" id="U3n-Ff-2Pj"/>
+                <constraint firstItem="MP2-3L-UpN" firstAttribute="trailing" secondItem="Hc4-Vd-a7H" secondAttribute="trailing" id="cVh-Bs-ZyI"/>
+                <constraint firstItem="8ks-lB-Gvg" firstAttribute="top" secondItem="MP2-3L-UpN" secondAttribute="bottom" constant="22" id="e3S-ac-ZIH"/>
+                <constraint firstAttribute="trailing" secondItem="Hc4-Vd-a7H" secondAttribute="trailing" constant="20" id="fe9-Gg-EEf"/>
+                <constraint firstItem="MP2-3L-UpN" firstAttribute="top" secondItem="Hc4-Vd-a7H" secondAttribute="bottom" constant="8" id="hvd-Yr-HWR"/>
+                <constraint firstItem="Hc4-Vd-a7H" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="scN-bP-sqv"/>
+                <constraint firstItem="8ks-lB-Gvg" firstAttribute="leading" secondItem="MP2-3L-UpN" secondAttribute="leading" id="wag-86-bIm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <edgeInsets key="layoutMargins" top="20" left="20" bottom="20" right="20"/>
+            <point key="canvasLocation" x="407" y="298.5"/>
+        </view>
+    </objects>
+</document>

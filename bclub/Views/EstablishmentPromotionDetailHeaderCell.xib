@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="OpenSans-Light.ttf">
+            <string>OpenSans-Light</string>
+            <string>OpenSans-Light</string>
+        </mutableArray>
+        <mutableArray key="OpenSans-Regular.ttf">
+            <string>OpenSans</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="253" id="WgM-Fa-pzT" customClass="EstablishmentPromotionDetailHeaderCell" customModule="B_Club" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="553" height="253"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WgM-Fa-pzT" id="Uhi-s5-lmZ">
+                <rect key="frame" x="0.0" y="0.0" width="553" height="252.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ry7-Ah-8Zr">
+                        <rect key="frame" x="0.0" y="0.0" width="553" height="252"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="252" id="7s6-AP-2dY"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFy-xQ-VI8" userLabel="ContainerView">
+                        <rect key="frame" x="0.0" y="177" width="553" height="75"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdP-6e-kje">
+                                <rect key="frame" x="10" y="10" width="533" height="25"/>
+                                <fontDescription key="fontDescription" name="OpenSans" family="Open Sans" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="100" verticalHuggingPriority="251" text="Botafogo - 700m" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.80000001192092896" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fr7-pk-6K3">
+                                <rect key="frame" x="437" y="45" width="106" height="20"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salão de Beleza" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wp-3r-VeL">
+                                <rect key="frame" x="10" y="45" width="99" height="20"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Light" family="Open Sans" pointSize="14"/>
+                                <color key="textColor" red="0.93725490570000003" green="0.4784313738" blue="0.50196081400000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13725490870000001" green="0.13725490870000001" blue="0.13725490870000001" alpha="0.4988369741" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mdP-6e-kje" firstAttribute="top" secondItem="VFy-xQ-VI8" secondAttribute="top" constant="10" id="6ki-yB-s5L"/>
+                            <constraint firstAttribute="bottom" secondItem="Fr7-pk-6K3" secondAttribute="bottom" constant="10" id="Cbp-Pd-2k4"/>
+                            <constraint firstItem="mdP-6e-kje" firstAttribute="leading" secondItem="VFy-xQ-VI8" secondAttribute="leading" constant="10" id="JLa-8f-OU3"/>
+                            <constraint firstAttribute="trailing" secondItem="mdP-6e-kje" secondAttribute="trailing" constant="10" id="Je9-R1-jPH"/>
+                            <constraint firstItem="3wp-3r-VeL" firstAttribute="top" secondItem="mdP-6e-kje" secondAttribute="bottom" constant="10" id="VjZ-B6-oU6"/>
+                            <constraint firstItem="3wp-3r-VeL" firstAttribute="leading" secondItem="VFy-xQ-VI8" secondAttribute="leading" constant="10" id="WlY-iU-JXE"/>
+                            <constraint firstAttribute="trailing" secondItem="Fr7-pk-6K3" secondAttribute="trailing" constant="10" id="cXe-hJ-syk"/>
+                            <constraint firstAttribute="bottom" secondItem="3wp-3r-VeL" secondAttribute="bottom" constant="10" id="paK-Jw-r85"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="VFy-xQ-VI8" secondAttribute="trailing" id="9r5-6m-RGM"/>
+                    <constraint firstAttribute="bottom" secondItem="Ry7-Ah-8Zr" secondAttribute="bottom" id="CMf-HB-0sG"/>
+                    <constraint firstItem="Ry7-Ah-8Zr" firstAttribute="leading" secondItem="Uhi-s5-lmZ" secondAttribute="leading" id="GQ6-mp-yx0"/>
+                    <constraint firstItem="VFy-xQ-VI8" firstAttribute="leading" secondItem="Uhi-s5-lmZ" secondAttribute="leading" id="Uwe-ze-fsW"/>
+                    <constraint firstAttribute="trailing" secondItem="Ry7-Ah-8Zr" secondAttribute="trailing" id="eQl-qI-szp"/>
+                    <constraint firstItem="Ry7-Ah-8Zr" firstAttribute="top" secondItem="Uhi-s5-lmZ" secondAttribute="top" id="fRm-r3-Wpo"/>
+                    <constraint firstAttribute="bottom" secondItem="VFy-xQ-VI8" secondAttribute="bottom" id="wzC-kw-Ih2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="nameLabel" destination="mdP-6e-kje" id="5ya-AQ-uHx"/>
+                <outlet property="neighborhoodAndDistanceLabel" destination="Fr7-pk-6K3" id="aFr-Xb-ts0"/>
+                <outlet property="promotionImageView" destination="Ry7-Ah-8Zr" id="8eK-iW-5uo"/>
+                <outlet property="typeLabel" destination="3wp-3r-VeL" id="kVk-4K-zf4"/>
+            </connections>
+            <point key="canvasLocation" x="604.5" y="402.5"/>
+        </tableViewCell>
+    </objects>
+</document>

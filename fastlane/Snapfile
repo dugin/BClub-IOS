@@ -1,0 +1,25 @@
+workspace "./bclub.xcworkspace"
+# Uncomment the lines below you want to change by removing the # in the beginning
+scheme "bclub"
+
+# A list of devices you want to take the screenshots from
+devices([
+    "iPhone 6",
+#   "iPhone 6 Plus",
+    "iPhone 5",
+#    "iPhone 4s",
+#   "iPad Retina",
+#   "iPad Pro"
+])
+
+#languages([
+#  ["pt", "pt_BR"] # Portuguese with Brazilian locale
+#])
+
+# Arguments to pass to the app on launch. See https://github.com/fastlane/snapshot#launch-arguments
+# launch_arguments(["-favColor red"])
+
+output_directory "./meta/screenshots"
+
+# For more information about all available options run
+# snapshot --help

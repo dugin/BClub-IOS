@@ -1,0 +1,135 @@
+PODS:
+  - Backendless-ios-SDK (3.0.37)
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - Crashlytics (3.8.1):
+    - Fabric (~> 1.6.3)
+  - Eureka (1.6.0)
+  - Fabric (1.6.8)
+  - FBSDKCoreKit (4.15.1):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.15.1):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.15.1):
+    - FBSDKCoreKit
+  - FirebaseAnalytics (3.3.1):
+    - FirebaseInstanceID (~> 1.0)
+    - GoogleInterchangeUtilities (~> 1.2)
+    - GoogleSymbolUtilities (~> 1.1)
+    - GoogleUtilities (~> 1.2)
+  - FirebaseInstanceID (1.0.8)
+  - Google/Analytics (3.0.3):
+    - Google/Core
+    - GoogleAnalytics (~> 3.12)
+  - Google/Core (3.0.3):
+    - FirebaseAnalytics (~> 3.2)
+  - GoogleAnalytics (3.16.0)
+  - GoogleInterchangeUtilities (1.2.1):
+    - GoogleSymbolUtilities (~> 1.0)
+  - GoogleSymbolUtilities (1.1.1)
+  - GoogleUtilities (1.3.1):
+    - GoogleSymbolUtilities (~> 1.0)
+  - KeychainAccess (2.3.6)
+  - MRProgress (0.8.3):
+    - MRProgress/ActivityIndicator (= 0.8.3)
+    - MRProgress/Blur (= 0.8.3)
+    - MRProgress/Circular (= 0.8.3)
+    - MRProgress/Icons (= 0.8.3)
+    - MRProgress/NavigationBarProgress (= 0.8.3)
+    - MRProgress/Overlay (= 0.8.3)
+  - MRProgress/ActivityIndicator (0.8.3):
+    - MRProgress/Stopable
+  - MRProgress/Blur (0.8.3):
+    - MRProgress/Helper
+  - MRProgress/Circular (0.8.3):
+    - MRProgress/Helper
+    - MRProgress/ProgressBaseClass
+    - MRProgress/Stopable
+  - MRProgress/Helper (0.8.3)
+  - MRProgress/Icons (0.8.3)
+  - MRProgress/NavigationBarProgress (0.8.3):
+    - MRProgress/ProgressBaseClass
+  - MRProgress/Overlay (0.8.3):
+    - MRProgress/ActivityIndicator
+    - MRProgress/Blur
+    - MRProgress/Circular
+    - MRProgress/Helper
+    - MRProgress/Icons
+  - MRProgress/ProgressBaseClass (0.8.3)
+  - MRProgress/Stopable (0.8.3):
+    - MRProgress/Helper
+  - Nuke (3.1.3)
+  - PhoneNumberKit (0.8.5):
+    - PhoneNumberKit/PhoneNumberKitCore (= 0.8.5)
+    - PhoneNumberKit/UIKit (= 0.8.5)
+  - PhoneNumberKit/PhoneNumberKitCore (0.8.5)
+  - PhoneNumberKit/UIKit (0.8.5):
+    - PhoneNumberKit/PhoneNumberKitCore
+  - Pluralize.swift (1.0)
+  - SnapKit (0.15.0)
+  - Stripe (8.0.6)
+  - SwiftyColor (0.1.3)
+  - VMaskTextField (1.0.8)
+
+DEPENDENCIES:
+  - Backendless-ios-SDK
+  - Crashlytics (~> 3.7)
+  - Eureka (~> 1.6.0)
+  - Fabric (~> 1.6)
+  - FBSDKCoreKit
+  - FBSDKLoginKit
+  - FBSDKShareKit
+  - Google/Analytics
+  - KeychainAccess
+  - MRProgress
+  - Nuke
+  - PhoneNumberKit (~> 0.8)
+  - Pluralize.swift (from `https://github.com/joshualat/Pluralize.swift`, branch `master`)
+  - SnapKit (~> 0.15.0)
+  - Stripe
+  - SwiftyColor
+  - VMaskTextField
+
+EXTERNAL SOURCES:
+  Pluralize.swift:
+    :branch: master
+    :git: https://github.com/joshualat/Pluralize.swift
+
+CHECKOUT OPTIONS:
+  Pluralize.swift:
+    :commit: 400b14a8f4497c8fc94494737f7562c38db3caa3
+    :git: https://github.com/joshualat/Pluralize.swift
+
+SPEC CHECKSUMS:
+  Backendless-ios-SDK: e506d3252e14e315f8b45dd19a7824cc07dbafa2
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  Crashlytics: 4391d8df0b125345e9f209c5db6e7f40a6a8435d
+  Eureka: ef5b9ac93aedeecfe50d98b1ac7678bf09a1fc62
+  Fabric: 5755268d0171435ab167e3d0878a28a777deaf10
+  FBSDKCoreKit: fc7fa53d16b095ee3fd53f0cd59f1df8bcbb634d
+  FBSDKLoginKit: 073f79b3b2e762fc6f54a283fe15f45372d59f5f
+  FBSDKShareKit: 11cbb5a4d7b5fda8143cc95b76188147e6725736
+  FirebaseAnalytics: d968d4d5f6aeb795cd64144337bcd233e530efc6
+  FirebaseInstanceID: ba1e640935235e5fac39dfa816fe7660e72e1a8a
+  Google: 813c467362eabc11385f5a5cc9ad0cb651a58f4e
+  GoogleAnalytics: 3de986b2fa29012c69fa415566006a9c9cf25320
+  GoogleInterchangeUtilities: def8415a862effc67d549d5b5b0b9c7a2f97d4de
+  GoogleSymbolUtilities: 33117db1b5f290c6fbf259585e4885b4c84b98d7
+  GoogleUtilities: 56c5ac05b7aa5dc417a1bb85221a9516e04d7032
+  KeychainAccess: 7f10e2ef998ddf954a64d5d608be08677774684d
+  MRProgress: 16de7cc9f347e8846797a770db102a323fe7ef09
+  Nuke: d951142c7499e18f242e59ae7fb95a021a2a4974
+  PhoneNumberKit: 5668a7af19d2e566d92831a632ee80f5047eff75
+  Pluralize.swift: 39197053939578ca42c3034081d2887016ce5a33
+  SnapKit: 4962eed2ee18e48cbd2b2292fffc57efe7235f87
+  Stripe: 7b3f1406c6bbc2f872a5781259da824750a7ee9c
+  SwiftyColor: bda7ad4a52c447aa8188cc55c27973285611124b
+  VMaskTextField: e77fe33633f999c5c38e70bed0afece0625624a4
+
+PODFILE CHECKSUM: bda87a4cda54f68081eb0c8da5a079ac7e83a8c1
+
+COCOAPODS: 1.2.0.beta.1

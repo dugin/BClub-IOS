@@ -1,0 +1,85 @@
+# Customise this file, documentation can be found here:
+# https://github.com/fastlane/fastlane/tree/master/fastlane/docs
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
+# can also be listed using the `fastlane actions` command
+
+# Change the syntax highlighting to Ruby
+# All lines starting with a # are ignored when running `fastlane`
+
+# If you want to automatically update fastlane if a new version is available:
+# update_fastlane
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+fastlane_version "1.91.0"
+
+default_platform :ios
+
+platform :ios do
+  ############################## PRE ##############################
+  
+  ENV["SLACK_URL"] = "https://hooks.slack.com/services/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"  
+
+  before_all do
+    ensure_git_status_clean
+    ensure_git_branch(branch: 'master')
+    git_pull
+    push_to_git_remote
+    cocoapods
+  end
+
+  ######################### PUBLIC LANES ##########################
+
+  desc "Submit a new Beta Build to Apple TestFlight"
+  lane :beta do
+    match(type: "appstore")
+
+    gym
+
+    pilot(
+      ipa: "./ipa/bclub.ipa",
+      skip_submission: true,
+    )
+
+    post_to_slack(destination: "TestFlight")    
+  end
+
+  ######################### HELPER #########################
+
+  private_lane :post_to_slack do |options|
+    version     = sh "git describe --tags --always --abbrev=0"
+    build       = sh "git rev-list master --count"
+    destination = options[:destination]
+
+    slack(
+      channel: "#bclub",
+      default_payloads: [], # reduce the notification to the minimum
+      message: "<!here|here>: New :ios: *#{version.strip} (#{build.strip})* has been submitted to *#{destination}* and will be available soon :rocket:",
+    )
+  end
+
+  ######################### AFTER #########################
+
+  after_all do |lane|
+    notification(
+      title: "B.Club beta", 
+      subtitle: "Fastlane finished successfully.", 
+      message: "Lane: '#{lane}'"
+    )
+  end
+
+  error do |lane, exception|
+    notification(
+      title: "B.Club beta", 
+      subtitle: "Fastlane finished with errors.", 
+      message: "Lane: '#{lane}'\nExpcetion: '#{exception}'"
+    )
+  end
+end
+
+
+# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
+# All available actions: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Actions.md
+
+# fastlane reports which actions are used
+# No personal data is recorded. Learn more at https://github.com/fastlane/enhancer
